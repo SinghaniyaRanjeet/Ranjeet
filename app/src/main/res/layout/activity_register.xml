@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="106dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/enter_user_name"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/business_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/adhar_number"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/mobile_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/mobile_number"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/email_id"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+
+            <EditText
+
+                android:id="@+id/gst_number_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/gst_number"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/address_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/address"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/office_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/office_number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/pan_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/pan_card"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/godown_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:hint="@string/godown_number"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edit_background"
+                android:drawablePadding="10dp"
+                android:hint="@string/enter_password"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/register_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="8dp"
+                android:text="REGISTER"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

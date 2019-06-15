@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">E_commerce</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="adhar_number">Adhar Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_id">Email Id</string>
+    <string name="gst_number">GST Number</string>
+    <string name="address">Address</string>
+    <string name="office_number">Office Number</string>
+    <string name="godown_number">GODOWN Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="pan_card">PAN CARD</string>
+    <string name="email_phone">Email/Phone</string>
+    <string name="password">Password</string>
 </resources>
