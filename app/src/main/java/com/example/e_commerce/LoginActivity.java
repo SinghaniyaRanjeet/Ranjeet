@@ -29,6 +29,9 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+
+        loginnext();
+
         //login
         Log.e(TAG, "ON click Method " + view.getId());
         switch (view.getId()) {
@@ -61,5 +64,9 @@ public class LoginActivity extends AppCompatActivity {
         } else if (pass.equals("")) {
             edt_Password.setError("Please Enter Password");
         }
+    }
+    private void loginnext(){
+        Intent intent=new Intent(LoginActivity.this,Main2Activity.class);
+        startActivity(intent);
     }
 }
