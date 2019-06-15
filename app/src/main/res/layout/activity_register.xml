@@ -35,7 +35,7 @@
 
 
             <EditText
-                android:id="@+id/business_edt"
+                android:id="@+id/adhar_edt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -86,7 +86,7 @@
                 android:padding="8dp" />
 
             <EditText
-                android:id="@+id/office_edt"
+                android:id="@+id/city_edt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -104,14 +104,6 @@
                 android:inputType="textPersonName"
                 android:padding="8dp" />
 
-            <EditText
-                android:id="@+id/godown_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:background="@drawable/edit_background"
-                android:hint="@string/godown_number"
-                android:padding="8dp" />
 
             <EditText
                 android:id="@+id/password_edt"

@@ -6,8 +6,7 @@
     <string name="email_id">Email Id</string>
     <string name="gst_number">GST Number</string>
     <string name="address">Address</string>
-    <string name="office_number">Office Number</string>
-    <string name="godown_number">GODOWN Number</string>
+    <string name="office_number">City</string>
     <string name="enter_password">Enter Password</string>
     <string name="pan_card">PAN CARD</string>
     <string name="email_phone">Email/Phone</string>
