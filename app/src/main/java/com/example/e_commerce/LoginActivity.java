@@ -43,5 +43,6 @@ public class LoginActivity extends AppCompatActivity {
     private void forword_register() {
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
+        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
     }
 }
