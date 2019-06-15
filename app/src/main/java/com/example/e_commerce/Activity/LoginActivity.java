@@ -1,4 +1,4 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.e_commerce.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -66,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
     private void loginnext(){
-        Intent intent=new Intent(LoginActivity.this,Main2Activity.class);
+        Intent intent=new Intent(LoginActivity.this, Search_Activity.class);
         startActivity(intent);
     }
 }

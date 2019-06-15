@@ -1,4 +1,4 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.e_commerce.R;
 
 import java.util.List;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.e_commerce.Activity.LoginActivity;
+import com.example.e_commerce.R;
 
 public class RegisterActivity extends AppCompatActivity {
     private EditText userName_edt, adharCard_edt, mobile_edt,

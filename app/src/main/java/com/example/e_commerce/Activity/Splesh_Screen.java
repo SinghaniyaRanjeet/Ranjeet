@@ -1,14 +1,16 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Buy_Now_Activity extends AppCompatActivity {
+import com.example.e_commerce.R;
+
+public class Splesh_Screen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy__now_);
+        setContentView(R.layout.activity_splesh__screen);
     }
 }

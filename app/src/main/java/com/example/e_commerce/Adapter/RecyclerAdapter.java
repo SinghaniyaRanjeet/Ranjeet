@@ -1,4 +1,4 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,6 +12,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.e_commerce.Activity.Main3Activity;
+import com.example.e_commerce.ModelClass.ListModel;
+import com.example.e_commerce.R;
 
 import java.util.List;
 
@@ -74,7 +78,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(context,Main3Activity.class);
+            Intent intent=new Intent(context, Main3Activity.class);
             context.startActivity(intent);
 
         }

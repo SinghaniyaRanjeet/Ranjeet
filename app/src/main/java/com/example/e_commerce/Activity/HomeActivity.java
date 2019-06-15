@@ -1,8 +1,10 @@
-package com.example.e_commerce;
+package com.example.e_commerce.Activity;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.e_commerce.R;
 
 public class HomeActivity extends AppCompatActivity {
 
