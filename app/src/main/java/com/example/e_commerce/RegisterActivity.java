@@ -1,5 +1,6 @@
 package com.example.e_commerce;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         //Register use button
         switch (view.getId()) {
             case R.id.register_txt:
+                getdataEdit();
                 Toast.makeText(this, "Register Successfully", Toast.LENGTH_SHORT).show();
                 return;
         }
@@ -49,8 +51,15 @@ public class RegisterActivity extends AppCompatActivity {
         String city_name = city_edt.getText().toString();
         String pan_card = panCard_edt.getText().toString();
         String password = pass_edt.getText().toString();
+        loginActivity();
 
 
     }
+
+    private void loginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
 
 }
