@@ -1,16 +1,20 @@
-package com.example.e_commerce;
-
-import android.os.Bundle;
+package com.example.e_commerce.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Bundle;
+
+import com.example.e_commerce.Adapter.RecyclerAdapter;
+import com.example.e_commerce.ModelClass.ListModel;
+import com.example.e_commerce.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main2Activity extends AppCompatActivity {
+public class Search_Activity extends AppCompatActivity {
 
     private RecyclerView recycler_view;
     private List<ListModel> listModels;
