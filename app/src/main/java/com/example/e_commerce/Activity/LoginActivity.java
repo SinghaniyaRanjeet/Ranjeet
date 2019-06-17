@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.e_commerce.R;
 
@@ -17,6 +18,8 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private EditText edt_Email, edt_Password;
     private TextView txt_Forget;
+    private Toolbar toolbar;
+
 
 
 
@@ -27,6 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         edt_Email = findViewById(R.id.email_edt);
         edt_Password = findViewById(R.id.password_edt);
         txt_Forget = findViewById(R.id.forget_txt);
+        toolbar=findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+        toolbar.setTitle(R.string.LoginActivity);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
     }
 

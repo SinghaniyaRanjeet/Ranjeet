@@ -11,4 +11,10 @@
     <string name="pan_card">PAN CARD</string>
     <string name="email_phone">Email/Phone</string>
     <string name="password">Password</string>
+    <string name="E_Commerce">E_Commerce</string>
+    <string name="LoginActivity">LoginActivity</string>
+    <string name="Search_Activity">Search_Activity</string>
+    <string name="Men_Activity">Men_Activity</string>
+    <string name="Women_Activity">Women_Activity</string>
+    <string name="Register_Activity">Register_Activity</string>
 </resources>

@@ -1,6 +1,10 @@
 package com.example.e_commerce.ModelClass;
 
-public class ListModel {
+import androidx.annotation.NonNull;
+
+import java.io.Serializable;
+
+public class ListModel implements Serializable {
 
     private int image;
     private String name;
@@ -34,5 +38,15 @@ public class ListModel {
 
     public void setPrice(String price) {
         this.price = price;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return"ListModels{" +
+                "name='" + name + '\'' +
+                ", price='" + price + '\'' +
+                ", image=" + image +
+                '}';
     }
 }

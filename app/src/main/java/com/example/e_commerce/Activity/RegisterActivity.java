@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText userName_edt, adharCard_edt, mobile_edt,
             email_edt, gst_edt, address_edt, city_edt, panCard_edt, pass_edt;
     private TextView register_edt;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         city_edt = findViewById(R.id.city_edt);
         panCard_edt = findViewById(R.id.pan_edt);
         pass_edt = findViewById(R.id.password_edt);
+
 
     }
 

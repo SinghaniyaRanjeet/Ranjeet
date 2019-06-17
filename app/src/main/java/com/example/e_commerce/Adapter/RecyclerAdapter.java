@@ -1,9 +1,13 @@
 package com.example.e_commerce.Adapter;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
 
 
+import android.os.Bundle;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,8 +50,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         ((Holder)viewHolder).cat_image.setImageResource(items.getImage());
         ((Holder)viewHolder).TextView.setText(items.getName());
         ((Holder)viewHolder).TextView1.setText(items.getPrice());
-
-
     }
 
     @Override
@@ -55,15 +57,10 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
         return listModel.size();
     }
 
-
-
-
-
     public class Holder extends RecyclerView.ViewHolder   implements View.OnClickListener{
 
         private ImageView cat_image;
         private TextView TextView,TextView1;
-
 
         public Holder(@NonNull View itemView) {
             super(itemView);
@@ -71,16 +68,24 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
             TextView=itemView.findViewById(R.id.TextView);
             TextView1=itemView.findViewById(R.id.TextView1);
 
-            itemView.setOnClickListener((View.OnClickListener) this);
-
-
+            itemView.setOnClickListener(this);
         }
 
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(context, Main3Activity.class);
-            context.startActivity(intent);
 
+            int posi = getAdapterPosition();
+
+            final  ListModel items=listModel.get(posi);
+
+            Intent intent=new Intent(context, Main3Activity.class);
+            Bundle _bundle =  new Bundle();
+            _bundle.putSerializable("Product", items);
+            intent.putExtras(_bundle);
+            Pair [] pairs=new Pair[1];
+            pairs[0] = new Pair<View, String>(cat_image,"cat_image");
+            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity) context, pairs);
+            context.startActivity(intent, activityOptions.toBundle());
         }
     }
 }

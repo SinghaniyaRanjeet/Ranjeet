@@ -9,6 +9,18 @@
     android:orientation="vertical"
     tools:context=".Activity.MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/appBarLayout"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
 
     <Button
         android:id="@+id/button"
