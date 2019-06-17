@@ -2,6 +2,7 @@ package com.example.e_commerce;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
+    private static final String TAG = "RegisterActivity";
     private EditText userName_edt, adharCard_edt, mobile_edt,
             email_edt, gst_edt, address_edt, city_edt, panCard_edt, pass_edt;
     private TextView register_edt;
@@ -57,6 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void loginActivity() {
+        Log.e(TAG, "Use to Intent Login Activity " + getIntent());
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }

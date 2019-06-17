@@ -125,6 +125,7 @@
                 android:onClick="onClick"
                 android:padding="8dp"
                 android:text="REGISTER"
+                android:background="@drawable/btn_background"
                 android:textSize="20dp" />
 
         </LinearLayout>

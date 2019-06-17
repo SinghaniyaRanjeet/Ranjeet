@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 speechRecogniz();
                 break;
-            case R.id.btn:
+            case R.id.approve_text:
                 forword();
                 break;
         }
@@ -61,19 +61,14 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "Recognization use by Intent " + getIntent());
 
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-
         intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say Something");
-
         startActivityForResult(intent, 0);
 
     }
 
     private void forword() {
-
         Intent i = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(i);
 
