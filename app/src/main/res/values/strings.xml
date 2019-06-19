@@ -14,7 +14,7 @@
     <string name="E_Commerce">E_Commerce</string>
     <string name="LoginActivity">LoginActivity</string>
     <string name="Search_Activity">Search_Activity</string>
-    <string name="Men_Activity">Men_Activity</string>
-    <string name="Women_Activity">Women_Activity</string>
+    <string name="Product_Activity">Product_Activity</string>
+    <string name="Buy_Now">Buy_Now</string>
     <string name="Register_Activity">Register_Activity</string>
 </resources>

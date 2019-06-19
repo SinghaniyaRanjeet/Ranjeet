@@ -16,7 +16,7 @@
         android:id="@+id/appBarLayout"
         tools:ignore="MissingConstraints">
 
-        <include layout="@layout/toolbar" />
+        <!--<include layout="@layout/toolbar" />-->
 
     </com.google.android.material.appbar.AppBarLayout>
 

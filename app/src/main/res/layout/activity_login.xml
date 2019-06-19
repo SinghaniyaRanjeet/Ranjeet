@@ -10,71 +10,86 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
         android:id="@+id/appBarLayout"
-        tools:ignore="MissingConstraints">
-
-        <include layout="@layout/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" >
+        <include layout="@layout/toolbar"></include>
 
     </com.google.android.material.appbar.AppBarLayout>
+
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631">
+        app:layout_constraintVertical_bias="0.593">
 
         <EditText
             android:id="@+id/email_edt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edit_background"
             android:hint="@string/email_phone"
-            android:padding="8dp" />
+            android:padding="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
 
         <EditText
             android:id="@+id/password_edt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/edit_background"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="48dp"
             android:hint="@string/password"
-            android:padding="8dp" />
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
 
 
         <TextView
             android:id="@+id/forget_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="4dp"
-            android:padding="8dp"
-            android:text="Forget Your Password ?" />
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Forget Password ?"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:background="@drawable/btn_background"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="Log_In" />
+            android:text="Log_In"
+            android:background="@drawable/button_bg"
+            android:padding="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"/>
 
         <Button
             android:id="@+id/signUp_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@drawable/btn_background"
             android:onClick="onClick"
+            android:background="@drawable/button_bg"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:padding="32dp"
+
             android:text="Sign Up" />
 
 

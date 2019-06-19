@@ -1,20 +1,20 @@
 package com.example.e_commerce.Activity;
 
-import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import com.example.e_commerce.ModelClass.ListModel;
 import com.example.e_commerce.R;
-import com.google.android.material.appbar.AppBarLayout;
+
 
 import java.util.ArrayList;
 
@@ -28,7 +28,7 @@ public class Main3Activity extends AppCompatActivity {
     private ArrayList<Integer> images;
     private Toolbar toolbar;
 
-    @SuppressLint("ResourceType")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,8 @@ public class Main3Activity extends AppCompatActivity {
         TextView1=findViewById(R.id.TextView1);
         toolbar=findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
-        toolbar.setTitle(R.string.E_Commerce);
+        toolbar.setTitle(R.string.Product_Activity);
+        toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,8 @@ public class Main3Activity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+
 
         if (getIntent() != null && getIntent().getExtras() != null)
         {
@@ -65,7 +68,6 @@ public class Main3Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
 
     }
 

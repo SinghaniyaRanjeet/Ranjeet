@@ -19,7 +19,6 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText userName_edt, adharCard_edt, mobile_edt,
             email_edt, gst_edt, address_edt, city_edt, panCard_edt, pass_edt;
     private TextView register_edt;
-    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
