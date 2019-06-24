@@ -1,26 +1,27 @@
 package com.example.e_commerce.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import androidx.appcompat.widget.Toolbar;
 
 import com.example.e_commerce.R;
 
-public class Buy_Now_Activity extends AppCompatActivity {
+public class Search_Activity extends AppCompatActivity {
+
     private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buy__now_);
+        setContentView(R.layout.activity_search_1);
 
         toolbar=findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
-        toolbar.setTitle(R.string.Buy_Now);
+        toolbar.setTitle(R.string.Search_Activity1);
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -30,5 +31,4 @@ public class Buy_Now_Activity extends AppCompatActivity {
             }
         });
     }
-
 }

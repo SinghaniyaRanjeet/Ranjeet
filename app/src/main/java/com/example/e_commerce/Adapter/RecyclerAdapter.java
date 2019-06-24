@@ -17,7 +17,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.e_commerce.Activity.Main3Activity;
+import com.example.e_commerce.Activity.Product_Activity;
 import com.example.e_commerce.ModelClass.ListModel;
 import com.example.e_commerce.R;
 
@@ -78,7 +78,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
             final  ListModel items=listModel.get(posi);
 
-            Intent intent=new Intent(context, Main3Activity.class);
+            Intent intent=new Intent(context, Product_Activity.class);
             Bundle _bundle =  new Bundle();
             _bundle.putSerializable("Product", items);
             intent.putExtras(_bundle);

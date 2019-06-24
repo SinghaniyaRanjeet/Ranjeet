@@ -1,16 +1,18 @@
 package com.example.e_commerce.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.SearchView;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.e_commerce.Adapter.RecyclerAdapter;
 import com.example.e_commerce.ModelClass.ListModel;
@@ -35,23 +37,20 @@ public class Search_Activity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_1);
 
-
-
-
         recycler_view=findViewById(R.id.recyclerview);
         searchView=findViewById(R.id.searchView);
 
         listModels=new ArrayList<ListModel>();
         ListModel listModel;
-        listModel = new ListModel(R.drawable.adidas, "Addidas new market ","345265267");
+        listModel = new ListModel(R.drawable.ic_launcher_background, "Addidas new market ","345265267");
         listModels.add(listModel);
-        listModel = new ListModel(R.drawable.applewatch, "AppleWatch new look","345267");
+        listModel = new ListModel(R.drawable.ic_launcher_background, "AppleWatch new look","345267");
         listModels.add(listModel);
-        listModel = new ListModel(R.drawable.asuswatch, "Asuswatch new market look","345267");
+        listModel = new ListModel(R.drawable.ic_launcher_background, "Asuswatch new market look","345267");
         listModels.add(listModel);
         listModel = new ListModel(R.drawable.ic_launcher_foreground, "Induction","345265267");
         listModels.add(listModel);
-        listModel = new ListModel(R.drawable.boschtool, "Induction","345265267");
+        listModel = new ListModel(R.drawable.ic_launcher_background, "Induction","345265267");
         listModels.add(listModel);
         listModel = new ListModel(R.drawable.ic_launcher_foreground, "Induction","345265267");
         listModels.add(listModel);
@@ -89,6 +88,20 @@ public class Search_Activity1 extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.toolbar_menu,menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.item_search) {
+
+            startActivity(new Intent(getApplicationContext(), Search_Activity.class));
+
+        } else if (id == R.id.item_cart) {
+
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        }
+        return true;
+    }
+
 
 }
 

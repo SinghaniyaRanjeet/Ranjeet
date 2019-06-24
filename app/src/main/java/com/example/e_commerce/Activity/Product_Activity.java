@@ -18,7 +18,7 @@ import com.example.e_commerce.R;
 
 import java.util.ArrayList;
 
-public class Main3Activity extends AppCompatActivity {
+public class Product_Activity extends AppCompatActivity {
 
 
     private Button TextView_BuyNow;
@@ -32,7 +32,7 @@ public class Main3Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_product_activity);
 
         TextView_BuyNow=findViewById(R.id.TextView_BuyNow);
         ImageView=findViewById(R.id.ImageView);
@@ -64,7 +64,7 @@ public class Main3Activity extends AppCompatActivity {
         TextView_BuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Main3Activity.this, Buy_Now_Activity.class);
+                Intent intent=new Intent(Product_Activity.this, Buy_Now_Activity.class);
                 startActivity(intent);
             }
         });
@@ -72,11 +72,6 @@ public class Main3Activity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
-        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
-        return true;
-    }
+
 
 }

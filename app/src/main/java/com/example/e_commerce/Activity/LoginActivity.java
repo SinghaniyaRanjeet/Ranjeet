@@ -45,8 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
-
-    public void onClick(View view) {
+        public void onClick(View view) {
 
         loginnext();
 
@@ -60,6 +59,10 @@ public class LoginActivity extends AppCompatActivity {
             case R.id.signUp_btn:
                 forword_register();
                 Toast.makeText(this, "signUp", Toast.LENGTH_SHORT).show();
+                return;
+            case R.id.forget_txt:
+
+                Toast.makeText(this, "drawer Activity", Toast.LENGTH_SHORT).show();
                 return;
         }
     }
@@ -86,5 +89,10 @@ public class LoginActivity extends AppCompatActivity {
     private void loginnext(){
         Intent intent=new Intent(LoginActivity.this, Search_Activity1.class);
         startActivity(intent);
+    }
+
+    private void gotoDrawer(){
+        Intent intent1=new Intent(this,DrawerActivity.class);
+        startActivity(intent1);
     }
 }
