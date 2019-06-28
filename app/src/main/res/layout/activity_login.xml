@@ -64,6 +64,7 @@
             android:layout_marginTop="32dp"
             android:text="Forget Password ?"
             android:textColor="@color/white"
+            android:onClick="onClick"
             android:textColorHint="@color/white"/>
 
         <Button
@@ -75,7 +76,7 @@
             android:onClick="onClick"
             android:text="Log_In"
             android:background="@drawable/button_bg"
-            android:padding="32dp"
+            android:padding="10dp"
             android:layout_marginEnd="32dp"
             android:layout_marginStart="32dp"/>
 
@@ -88,7 +89,7 @@
             android:background="@drawable/button_bg"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:padding="32dp"
+            android:padding="10dp"
 
             android:text="Sign Up" />
 

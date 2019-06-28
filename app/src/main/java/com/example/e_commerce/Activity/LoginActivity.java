@@ -14,13 +14,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.example.e_commerce.DrawerActivity;
 import com.example.e_commerce.R;
 
 public class LoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginActivity";
     private EditText edt_Email, edt_Password;
-    private TextView txt_Forget;
     private Toolbar toolbar;
 
 
@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         edt_Email = findViewById(R.id.email_edt);
         edt_Password = findViewById(R.id.password_edt);
-        txt_Forget = findViewById(R.id.forget_txt);
         toolbar =  findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
         toolbar.setTitle(R.string.LoginActivity);
@@ -47,22 +46,20 @@ public class LoginActivity extends AppCompatActivity {
     }
         public void onClick(View view) {
 
-        loginnext();
-
         //login
         Log.e(TAG, "ON click Method " + view.getId());
         switch (view.getId()) {
             case R.id.login_btn:
-
-                Toast.makeText(this, "Login", Toast.LENGTH_SHORT).show();
+                gotoDrawer();
+                Toast.makeText(this, "drawer Activity", Toast.LENGTH_SHORT).show();
                 return;
             case R.id.signUp_btn:
                 forword_register();
                 Toast.makeText(this, "signUp", Toast.LENGTH_SHORT).show();
                 return;
             case R.id.forget_txt:
-
-                Toast.makeText(this, "drawer Activity", Toast.LENGTH_SHORT).show();
+                loginnext();
+                Toast.makeText(this, "search Activity", Toast.LENGTH_SHORT).show();
                 return;
         }
     }
@@ -87,12 +84,13 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
     private void loginnext(){
-        Intent intent=new Intent(LoginActivity.this, Search_Activity1.class);
-        startActivity(intent);
+        Intent searchIntent=new Intent(LoginActivity.this, Search_Activity1.class);
+        startActivity(searchIntent);
     }
 
     private void gotoDrawer(){
-        Intent intent1=new Intent(this,DrawerActivity.class);
-        startActivity(intent1);
+        Log.e(TAG,"goto drawer activity from login activity");
+        Intent in=new Intent(this, DrawerActivity.class);
+        startActivity(in);
     }
 }

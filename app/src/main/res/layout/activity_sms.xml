@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="top"
+    tools:context=".SMSActivity">
+
+    <EditText
+        android:id="@+id/mobile_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:hint="Enter Mobile Number"/>
+
+    <EditText
+        android:id="@+id/send_message_edit"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:hint="Enter Mobile Number"/>
+
+    <TextView
+        android:id="@+id/send_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:padding="10sp"
+        android:onClick="onClick"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="10dp"
+        android:text="@string/send"/>
+
+
+</LinearLayout>
