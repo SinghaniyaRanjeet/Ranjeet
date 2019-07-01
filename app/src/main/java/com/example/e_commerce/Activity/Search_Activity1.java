@@ -40,6 +40,8 @@ public class Search_Activity1 extends AppCompatActivity {
         recycler_view=findViewById(R.id.recyclerview);
         searchView=findViewById(R.id.searchView);
 
+
+
         listModels=new ArrayList<ListModel>();
         ListModel listModel;
         listModel = new ListModel(R.drawable.ic_launcher_background, "Addidas new market ","345265267");

@@ -7,11 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.e_commerce.Activity.LoginActivity;
 import com.example.e_commerce.R;
 
 public class RegisterActivity extends AppCompatActivity {

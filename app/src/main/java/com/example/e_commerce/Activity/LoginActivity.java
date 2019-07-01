@@ -6,14 +6,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
-//import android.support.v7.widget.Toolbar;
-//import android.widget.Toolbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import com.example.e_commerce.DrawerActivity;
 import com.example.e_commerce.R;
 
@@ -47,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         public void onClick(View view) {
 
         //login
-        Log.e(TAG, "ON click Method " + view.getId());
+        Log.e(TAG, "On click Method " + view.getId());
         switch (view.getId()) {
             case R.id.login_btn:
                 gotoDrawer();

@@ -10,14 +10,36 @@
     android:layout_gravity="top"
     tools:context=".SMSActivity">
 
-    <EditText
-        android:id="@+id/mobile_number_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:padding="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edit_background"
-        android:hint="Enter Mobile Number"/>
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/mobile_number_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_background"
+            android:hint="Enter Mobile Number"/>
+
+
+        <TextView
+            android:id="@+id/speech"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_settings_voice_black_24dp"
+            android:padding="10dp"
+            android:onClick="onClick"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
 
     <EditText
         android:id="@+id/send_message_edit"
@@ -28,6 +50,17 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/edit_background"
         android:hint="Enter Mobile Number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+
+
+
 
     <TextView
         android:id="@+id/send_sms"

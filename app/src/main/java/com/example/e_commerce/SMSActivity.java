@@ -1,18 +1,24 @@
 package com.example.e_commerce;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.speech.RecognizerIntent;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.List;
+import java.util.Locale;
 
 public class SMSActivity extends AppCompatActivity {
     private static final String TAG = "SMSActivity";
@@ -41,6 +47,12 @@ public class SMSActivity extends AppCompatActivity {
                   ActivityCompat.requestPermissions(SMSActivity.this,new String[]
                           {Manifest.permission.SEND_SMS},0);
               }
+
+              break;
+
+          case R.id.speech:
+              // speech
+              speechRecogniz();
 
               break;
       }
@@ -87,5 +99,41 @@ public class SMSActivity extends AppCompatActivity {
                 }
                 break;
         }
+    }
+
+
+    private void speechRecogniz() {
+
+        Log.e(TAG, "Recognization use by Intent " + getIntent());
+
+        Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Say Something");
+        startActivityForResult(intent, 0);
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+
+        Log.e(TAG,"On Activity Result : ");
+
+        try {
+            List<String> list=data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+
+            String results=list.get(0);
+            Log.e(TAG, "EditTxt Result get in list " + results);
+
+                message_edit.setText(results);
+
+
+            super.onActivityResult(requestCode, resultCode, data);
+        }catch (NullPointerException e) {
+            e.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

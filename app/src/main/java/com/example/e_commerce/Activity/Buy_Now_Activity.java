@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import androidx.appcompat.widget.Toolbar;
 
@@ -29,6 +28,20 @@ public class Buy_Now_Activity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-    }
 
+
+    }
+    // for Notification for use Payment Confirm
+    public void onClick(View view) {
+        switch (view.getId()){
+
+            case R.id.notification:
+
+
+
+
+                break;
+        }
+
+    }
 }

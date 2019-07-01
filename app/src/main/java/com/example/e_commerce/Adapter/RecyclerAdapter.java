@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
-
-
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -13,10 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.e_commerce.Activity.Product_Activity;
 import com.example.e_commerce.ModelClass.ListModel;
 import com.example.e_commerce.R;
